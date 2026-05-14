@@ -5,4 +5,5 @@ CREATE TABLE funcionarios (
     cargo     VARCHAR(50),
     salario   DECIMAL(10,2),
     criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    ALTER TABLE funcionarios ADD COLUMN deletado_em TIMESTAMP NULL DEFAULT NULL;
 );
